@@ -7,6 +7,7 @@ import About from "./components/About"
 import ProductDetails from "./components/ProductDetails"
 import Checkout from "./components/Checkout"
 import OrderConfirmation from "./components/OrderConfirmation"
+import techBackground from "./assets/tech-background.mp4";
 
 function App() {
   const [cart, setCart] = useState([])
@@ -96,10 +97,7 @@ function App() {
         loop
         playsInline
       >
-        <source
-          src="/tech-background.mp4"
-          type="video/mp4"
-        />
+       <source src={techBackground} type="video/mp4" />
       </video>
 
       <div className="site-video-overlay"></div>
